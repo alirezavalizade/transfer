@@ -11,7 +11,7 @@ const Transfer = () => {
   const [state, send] = useMachine(transferMachine);
   const { percent } = state.context;
 
-  console.log(state);
+  const isTransferring = state.value === 'transferring';
 
   const label = transformByState(state.value, labels);
   const title = transformByState(state.value, titles);
@@ -38,7 +38,7 @@ const Transfer = () => {
       </Box>
       <Box minW="100%">
         <Button
-          onClick={() => send('TRANSFER')}
+          onClick={() => send(isTransferring ? 'CANCEL' : 'TRANSFER')}
           radius="500px"
           bg="#409fff"
           hoverBg="#0073e5"

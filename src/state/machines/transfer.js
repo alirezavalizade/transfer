@@ -47,6 +47,10 @@ export const transferMachine = Machine(
           TRANSFER: {
             target: 'transferring',
             actions: 'updatePercent'
+          },
+          CANCEL: {
+            target: 'transfer',
+            actions: 'resetPercent'
           }
         }
       },
