@@ -4,9 +4,7 @@
     <br/>
     <img src="./public/viz.png" alt="xstate" />
     <br />
-    <a href="https://practical-swanson-a56b9a.netlify.app/" target="_blank">
-        An uploader component with progress bar and finite-state machine.
-    </a>
+      An uploader component with progress bar and finite-state machine.
     <br />
     <br />
   </h1>
