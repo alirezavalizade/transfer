@@ -2,7 +2,7 @@
   <h1>
     <br/>
     <br/>
-    <img src="./public/viz.png" alt="xstate" />
+      <img src="./public/overview.png" alt="transfer" />
     <br />
       An uploader component with progress bar and finite-state machine.
     <br />
